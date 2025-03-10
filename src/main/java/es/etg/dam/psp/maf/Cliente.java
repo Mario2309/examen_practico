@@ -23,9 +23,10 @@ public class Cliente implements Constantes{
             
             System.out.println(RESULTADO + gestor.recibir(cliente));
 
-            System.out.println("Puntuaje de operaciones: " + gestor.recibir(cliente));
+            System.out.println(PUNT_OP_SIM + gestor.recibir(cliente));
+            System.out.println(PUNT_OP_COMP + gestor.recibir(cliente));
 
-            System.out.println("Determina si quieres salir pulsando 0: ");
+            System.out.println(SALIR);
             salir = sc.nextInt();
             gestor.enviar(cliente, String.valueOf(salir));
 
@@ -34,6 +35,7 @@ public class Cliente implements Constantes{
             }
             
         } while (!cliente.isClosed());
+        sc.close();
 
 
     }

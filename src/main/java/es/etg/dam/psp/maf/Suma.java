@@ -2,7 +2,7 @@ package es.etg.dam.psp.maf;
 
 public class Suma extends Operacion{
     
-    private int tipoOp = 1;
+    private int tipoOp = 5;
 
     public Suma(int v1, int v2) {
         super(v1, v2);
